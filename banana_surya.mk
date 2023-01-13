@@ -12,10 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common BananaDroid stuff.
-$(call inherit-product, vendor/banana/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
+
+# Maintainer
+BANANA_MAINTAINER := MweTwo
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Google apps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 PRODUCT_NAME := banana_surya
 PRODUCT_DEVICE := surya
