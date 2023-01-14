@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/banana/config/common.mk)
 
 # Maintainer
-BANANA_MAINTAINER := MweTwo
+BANANA_MAINTAINER := RLO
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bootanimation
