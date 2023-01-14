@@ -21,6 +21,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Enable blur
+TARGET_ENABLE_BLUR := true
+
 # Google apps
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
